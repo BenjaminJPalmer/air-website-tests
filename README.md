@@ -12,6 +12,5 @@ Test the HTML and CSS validation of the site
 
 ## TODO
 
-* Add better wait functionality to reduce flakiness (currently has time.sleep() waits)
-* Improve screenshot functionality to `--save-screenshot` is not required
+* Improve screenshot functionality so `--save-screenshot` is not required
 * Add more test cases as required
