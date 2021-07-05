@@ -9,10 +9,10 @@ class TestValidation(BaseCase):
         self.open("https://validator.w3.org/")
         self.type("#uri", url)
         self.click("form[method='get'] a[class='submit']")
-        time.sleep(15)
+        self.wait_for_text_visible("Showing results for", timeout=20)
 
     def test_css(self):
         self.open("https://jigsaw.w3.org/css-validator/")
         self.type("#uri", url)
         self.click("label[title='Submit URI for validation'] span")
-        time.sleep(15)
+        self.wait_for_text_visible("W3C CSS Validator results for", timeout=20)
